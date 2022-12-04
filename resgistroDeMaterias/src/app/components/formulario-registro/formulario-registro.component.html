@@ -1,0 +1,96 @@
+<div class="container">
+  <div class="d-grid w row mt-2 justify-content-center">
+    <div
+      class="d-grid p-5 col-lg-12 rounded-2 bg-danger justify-content-center"
+    >
+      <div class="row mb-4">
+        <h1>Registro de matérias</h1>
+      </div>
+      <form>
+        <div class="row mb-3">
+          <div>
+            <label for="inputName" class="col-sm-1 col-form-label">Nome</label>
+            <div class="col-sm-auto">
+              <input type="text" class="form-control" id="inputName" required />
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <label for="inputCargaHorariaDeAula" class="col-sm-5 col-form-label"
+            >Carga horária de aula</label
+          >
+          <div class="col-sm-auto">
+            <input
+              type="number"
+              class="form-control"
+              id="inputCargaHorariaDeAula"
+              [min]="1"
+              required
+            />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div>
+            <label for="inputEscola" class="col-sm-5 col-form-label"
+              >Escola</label
+            >
+            <div class="col-sm-auto">
+              <input
+                type="text"
+                class="form-control"
+                id="inputEscola"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div>
+            <label for="col-sm-2 col-form-label">Professor</label>
+            <div class="col-sm-auto">
+              <select class="form-select" required>
+                <option selected disabled>Selecione um professor</option>
+                <option value="1">Otávio</option>
+                <option value="2">Vivian</option>
+                <option value="3">Leandro</option>
+                <option value="3">Cláudia</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <fieldset>
+            <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="materiaOpcional"
+                  id="materiaOpcionalRadio"
+                  value="opcional"
+                  required
+                />
+                <label class="form-check-label" for="materiaOpcionalRadio">
+                  Opcional
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="materiaOpcional"
+                  id="materiaNaoOpcional"
+                  value="Nao opcional"
+                />
+                <label class="form-check-label" for="materiaNaoOpcional"
+                  >Não opcional</label
+                >
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
