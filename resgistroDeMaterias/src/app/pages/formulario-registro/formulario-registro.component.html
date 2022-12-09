@@ -90,7 +90,16 @@
             </div>
           </fieldset>
         </div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Enviar
+        </button>
       </form>
     </div>
   </div>
 </div>
+<app-modal [titleModal]="titleModal" [messageModal]="messageModal"></app-modal>
