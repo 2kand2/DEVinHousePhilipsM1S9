@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { FormularioRegistroComponent } from './pages/formulario-registro/formulario-registro.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ItemCardComponent } from './components/item-card/item-card.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     FormularioRegistroComponent,
     ModalComponent,
     NavbarComponent,
+    ItemCardComponent,
   ],
   imports: [BrowserModule],
   providers: [],

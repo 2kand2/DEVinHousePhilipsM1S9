@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="d-grid w row mt-5 justify-content-center">
+  <div class="d-grid row mt-5 justify-content-center">
     <div
       class="d-grid p-5 col-lg-12 rounded-2 bg-danger justify-content-center"
     >
@@ -60,31 +60,33 @@
         </div>
         <div class="row mb-3">
           <fieldset>
-            <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+            <legend class="col-form-label col-sm-5 pt-0">
+              Matéria é opcional?
+            </legend>
             <div class="col-sm-10">
               <div class="form-check">
                 <input
                   class="form-check-input"
                   type="radio"
                   name="materiaOpcional"
-                  id="materiaOpcionalRadio"
-                  value="opcional"
+                  id="materiaOpcional"
+                  value="sim"
                   required
                 />
-                <label class="form-check-label" for="materiaOpcionalRadio">
-                  Opcional
+                <label class="form-check-label" for="materiaOpcional">
+                  Sim
                 </label>
               </div>
               <div class="form-check">
                 <input
                   class="form-check-input"
                   type="radio"
-                  name="materiaOpcional"
+                  name="materiaNaoOpcional"
                   id="materiaNaoOpcional"
-                  value="Nao opcional"
+                  value="nao"
                 />
                 <label class="form-check-label" for="materiaNaoOpcional"
-                  >Não opcional</label
+                  >Não</label
                 >
               </div>
             </div>
@@ -101,5 +103,13 @@
       </form>
     </div>
   </div>
+</div>
+<div class="d-flex justify-content-center mt-5 mb-5">
+  <app-item-card
+    srcImg="../../../assets/img/two-and-a-half-men-charlie-sheen-.jpg"
+    name="Charlie Francis Harper"
+    nameActor="Charlie Sheen"
+    descriptionCard="Charles Francis Harper é um solteiro de meia-idade que mora em uma casa de praia em Malibu. Seu estilo de vida frívolo se deve ao fato de ganhar muito dinheiro escrevendo jingles no início e depois canções infantis. Ele bebe e dorme com mulheres diferentes quase todos os dias, e então acorda na manhã seguinte pronto para fazer tudo de novo."
+  ></app-item-card>
 </div>
 <app-modal [titleModal]="titleModal" [messageModal]="messageModal"></app-modal>
