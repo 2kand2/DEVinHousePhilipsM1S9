@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row mt-5 mb-5 justify-content-center">
+    <div class="col-sm-5 p-5 bg-primary">
+      <form class="text-white" (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emailInput"
+            ngModel
+            name="emailInput"
+            email
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="passwordInput" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="passwordInput"
+            ngModel
+            name="password"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="btn btn-success mt-3"
+          [disabled]="!myForm.valid"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
