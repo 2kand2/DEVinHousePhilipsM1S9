@@ -8,6 +8,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ItemCardComponent } from './components/item-card/item-card.component';
 import { FormRegisterComponent } from './components/form-register/form-register.component';
+import { SearchBoxComponent } from './components/search-box/search-box.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FormRegisterComponent } from './components/form-register/form-register.
     NavbarComponent,
     ItemCardComponent,
     FormRegisterComponent,
+    SearchBoxComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
